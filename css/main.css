@@ -66,7 +66,7 @@
   padding: 80px 0px !important;
   position: relative;
   z-index: 50;
-  background: #0b3b8e; }
+  background: var(--black); }
 
 .d-none {
   display: none !important; }
@@ -150,10 +150,6 @@
     justify-content: space-between;
     align-items: center;
     height: 80px; }
-  .header_inner_logo{
-    width: 40%;
-    margin-top: 5%;
-  }
   .header__burger {
     cursor: pointer;
     display: none;
@@ -238,7 +234,7 @@
   fill: #ffffff; }
 
 .header-background {
-    background: #0B3B8E !important; }
+  background: var(--black) !important; }
 
 .line {
   fill: none;
@@ -280,9 +276,9 @@
   transition: all 0.6s ease; }
 
 @media only screen and (max-width: 1200px) {
-  .header_inner_logo {
-    width: 50%;
-    z-index: 100; }
+  .header__logo-svg {
+    width: 170px;
+    height: 36px; }
   .header__ul {
     gap: 32px; }
   .header__li {
@@ -303,8 +299,9 @@
 @media only screen and (max-width: 768px) {
   .header__inner {
     height: 60px; }
-  .header_inner_logo {
-    width: 45%;
+  .header__logo-svg {
+    width: 130px;
+    height: 36px;
     z-index: 100; }
   .header__burger {
     display: flex;
@@ -499,7 +496,7 @@
   left: 0;
   width: 100%;
   height: 15vh;
-  background: linear-gradient(180deg, rgba(16, 21, 26, 0) 0%, #0b3b8e 100%);
+  background: linear-gradient(180deg, rgba(16, 21, 26, 0) 0%, #10151A 100%);
   z-index: 9; }
 
 .home {
@@ -508,18 +505,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0b3b8e;
+  background: var(--black);
   color: var(--white);
   position: relative;
   scroll-behavior: smooth; }
   .home__inner {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     position: relative;
     z-index: 5;
-    padding: 100px 0px; 
-  }
+    padding: 100px 0px; }
   .home__text {
     display: flex;
     flex-direction: column;
@@ -533,7 +529,7 @@
   .home__text-title-dao {
     position: relative; }
     .home__text-title-dao::before {
-      content: url("../img/paints1.png");
+      content: url("../image/paints1.png");
       width: 100%;
       height: 100%;
       position: absolute;
@@ -543,11 +539,6 @@
   .home__text-subtitle {
     text-align: center;
     max-width: 700px; }
-  .home__vedio{
-    width: 70%;
-    height: 100px;
-    border: 1px solid;
-  }
   .home__btn {
     padding: 16px 32px;
     background: linear-gradient(180deg, #FFD600 0%, #FFB800 100%);
@@ -603,13 +594,13 @@
     padding: 12px 20px; } }
 
 .get {
-  background: #0b3b8e;
+  background: var(--black);
   color: var(--white); }
   .get__title {
     margin-bottom: 60px;
     position: relative; }
     .get__title::before {
-      content: url("../img/paints2.png");
+      content: url("../image/paints2.png");
       width: 100%;
       height: 100%;
       position: absolute;
@@ -645,7 +636,7 @@
     line-height: 52px;
     margin-bottom: 42px; }
     .get__title::before {
-      content: url("../img/paints2.png");
+      content: url("../image/paints2.png");
       transform: scale(0.85);
       top: 15px;
       left: -10px; }
@@ -695,7 +686,7 @@
     position: relative;
     display: inline-block; }
     .get__title-superpowers::before {
-      content: url("../img/paints2_1.png");
+      content: url("../image/paints2_1.png");
       position: absolute;
       top: 10px;
       left: -14px;
@@ -726,7 +717,7 @@
 
 .change {
   position: relative;
-  background: #0b3b8e;
+  background: var(--black);
   z-index: 10;
   color: var(--white); }
   .change__title {
@@ -740,7 +731,7 @@
     text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.6);
     margin-bottom: 60px; }
     .change__title::before {
-      content: url(../img/paints3.png);
+      content: url(../image/paints3.png);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -786,7 +777,7 @@
     text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.6);
     margin-bottom: 40px; }
     .change__title::before {
-      content: url(../img/paints3.png);
+      content: url(../image/paints3.png);
       transform: scale(0.85);
       width: 100%;
       height: 100%;
@@ -835,7 +826,7 @@
   .change__title {
     display: none; }
     .change__title::before {
-      content: url(../img/paints3.png);
+      content: url(../image/paints3.png);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -860,7 +851,7 @@
     /* or 114% */
     text-align: center; }
     .change__title-every::before {
-      content: url(../img/paints3_1.png);
+      content: url(../image/paints3_1.png);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -909,13 +900,13 @@
 .network {
   position: relative;
   z-index: 5;
-  background: #0b3b8e;
+  background: var(--black);
   color: var(--white); }
   .network__title {
     position: relative;
     margin-bottom: 60px; }
     .network__title::before {
-      content: url(../img/paints4.png);
+      content: url(../image/paints4.png);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -1088,7 +1079,7 @@
       text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.6);
       margin-bottom: 60px; }
       .network__title::before {
-        content: url(../img/paints4.png);
+        content: url(../image/paints4.png);
         transform: scale(0.85);
         width: 100%;
         height: 100%;
@@ -1248,7 +1239,7 @@
       display: inline-block;
       position: relative; }
       .network__title-every::before {
-        content: url(../img/paints4_1.png);
+        content: url(../image/paints4_1.png);
         width: 100%;
         height: 100%;
         position: absolute;
@@ -1404,7 +1395,7 @@
 .ins {
   position: relative;
   z-index: 5;
-  background: #0b3b8e;
+  background: var(--black);
   color: var(--white); }
   .ins__inner {
     background: linear-gradient(123.3deg, #A96BF7 2.02%, #3103B5 101.68%);
@@ -1413,7 +1404,7 @@
     padding-top: 52px;
     position: relative; }
     .ins__inner::after {
-      content: url(../img/decor.png);
+      content: url(../image/decor.png);
       position: absolute;
       z-index: 0;
       top: 0;
@@ -1547,7 +1538,7 @@
 .idea {
   position: relative;
   z-index: 5;
-  background: #0b3b8e;
+  background: var(--black);
   color: var(--white); }
   .idea__title {
     font-weight: bold;
@@ -1560,7 +1551,7 @@
     position: relative;
     margin-bottom: 12px; }
     .idea__title::before {
-      content: url(../img/paints5.png);
+      content: url(../image/paints5.png);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -1631,7 +1622,7 @@
     line-height: 52px;
     margin-bottom: 24px; }
     .idea__title::before {
-      content: url(../img/paints5.png);
+      content: url(../image/paints5.png);
       transform: scale(0.8);
       width: 100%;
       height: 100%;
@@ -1698,7 +1689,7 @@
     text-align: center;
     margin-bottom: 21px; }
     .idea__title2::before {
-      content: url(../img/paints5_1.png);
+      content: url(../image/paints5_1.png);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -1766,7 +1757,7 @@
 .backed {
   position: relative;
   z-index: 10;
-  background: #0b3b8e;
+  background: var(--black);
   color: var(--white);
   padding-top: 120px;
   padding-bottom: 160px; }
@@ -1782,7 +1773,7 @@
     margin-bottom: 44px;
     position: relative; }
     .backed__title::before {
-      content: url("../img/paints6.png");
+      content: url("../image/paints6.png");
       width: 100%;
       height: 100%;
       position: absolute;
@@ -1840,7 +1831,7 @@
       font-size: 40px;
       line-height: 52px; }
       .backed__title::before {
-        content: url("../img/paints6.png");
+        content: url("../image/paints6.png");
         width: 100%;
         height: 100%;
         position: absolute;
@@ -1885,7 +1876,7 @@
       line-height: 28px;
       margin-bottom: 32px; }
       .backed__title::before {
-        content: url("../img/paints6.png");
+        content: url("../image/paints6.png");
         width: 100%;
         height: 100%;
         position: absolute;

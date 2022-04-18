@@ -140,14 +140,14 @@
 @font-face {
   font-display: block;
   font-family: 'PTMono';
-  src: url("../fonts/PT-Mono_Bold.woff2") format("woff2"), url("../fonts/PT-Mono_Bold.woff") format("woff");
+  src: url("../image/PT-Mono_Bold.woff2") format("woff2"), url("../image/PT-Mono_Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-display: block;
   font-family: 'PTMono';
-  src: url("../fonts/PT-Mono_Regular.woff2") format("woff2"), url("../fonts/PT-Mono_Regular.woff") format("woff");
+  src: url("../image/PT-Mono_Regular.woff2") format("woff2"), url("../image/PT-Mono_Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 

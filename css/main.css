@@ -524,6 +524,35 @@
   .home__text-subtitle {
     text-align: center;
     max-width: 700px; }
+
+  #heroButton {
+    background-color: #F9B95C;
+    color: #000;
+  }
+  #heroButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 20px rgb(255 255 255 / 10%);
+  }
+
+  .Button.Big {
+    font-size: 1.25em;
+    min-width: 150px;
+    padding: 15px;
+    text-align: center;
+  }
+  .Button {
+    background-color: #F9B95C;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Open Sans,sans-serif;
+    font-size: 1em;
+    height: auto;
+    padding: 10px 15px;
+    transition: .15s linear;
+    margin-top: 10px;
+  }
 .home_vedio{
   display: flex;
   flex-direction: column;
@@ -559,12 +588,12 @@
     justify-content: center;
     position: relative;
     z-index: 5;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin-top: 10px;
     width: 35em;
     height: 20em;
   }
-  }
+}
 
 @media only screen and (max-width: 768px) {
   .home__text {

@@ -265,7 +265,8 @@
 @media only screen and (max-width: 1200px) {
   .header__logo-svg {
     width: 170px;
-    height: 36px; }
+    /* height: 36px;  */
+  }
   .header__ul {
     gap: 32px; }
   .header__li {
@@ -496,7 +497,7 @@
     justify-content: center;
     position: relative;
     z-index: 5;
-    padding: 100px 150px 0px 0px; }
+    padding: 100px 130px 0px 0px; }
   .home__text {
     display: flex;
     flex-direction: column;
@@ -527,9 +528,10 @@
   position: relative;
   z-index: 5;
   border: 1px solid;
-  margin-top: 100px;
-  width: 35em;
-  height: 20em;
+  border-image: linear-gradient(252.58deg,#D7594F, rgba(166, 63, 0, 0),#F9B95C) 8 48 90;
+  /* margin-top: 100px; */
+  width: 40em;
+  height: 25em;
 }
 
 @media only screen and (max-width: 1200px) {

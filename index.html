@@ -42,8 +42,19 @@
             <ul class="header__ul container">
               <li class="header__li"><a href="" target="_blank" class="header__a h-title">Documentation</a></li>
               <li class="header__li header__li-directory-amount"><a href="" class="header__a h-title">Contribute</a></li>
-              <!-- <li class="header__li header__li-about"><a href="" target="_blank" class="header__a h-title">About</a></li> -->
-              <li class="header__li"><a href="" target="_blank" class="header__a h-title">Governance</a></li>
+              <li class="header__li header__li-about"><a href="https://snapshot.org/#/tomoondao.eth" target="_blank" class="header__a h-title">Snapshot</a></li>
+              <li class="header__li header__li-about"><a href="https://forum.moondao.com/" target="_blank" class="header__a h-title">Forum</a></li>
+
+              <!-- <li class="header__li"> -->
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="https://snapshot.org/#/tomoondao.eth">Snapshot</a>
+                  <a href="https://forum.moondao.com/">Forum</a>
+                </div>
+              </div>
+              <!-- </li> -->
+
               <div class="header__btn-group">
                 <a href="" target="_blank" class="header__btn">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1498,3 +1509,24 @@
 <script src="./javascript/main.js"></script>
 <script src="./javascript/aos.js"></script>
 <script src="./javascript/flipdown.js"></script>
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>

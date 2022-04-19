@@ -900,6 +900,12 @@
   z-index: 5;
   background: var(--black);
   color: var(--white); }
+  .ticket_container{
+    /* max-width: 1372px; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
   .network__title {
     position: relative;
     margin-bottom: 60px; }
@@ -930,51 +936,22 @@
     text-align: center;
     color: #ffd501;
     margin-bottom: 24px; }
-  .network__box-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 58px; }
-  .network__box-item {
-    padding: 8px 28px;
-    display: flex;
-    align-items: center;
-    background: #222d37;
-    border-radius: 12px; }
-  .network__box-circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: rgba(255, 214, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 12px; }
-  .network__box-circle-cirle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #ffd600; }
-  .network__box-name {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 40px;
-    /* identical to box height, or 182% */
-    color: #ffffff; }
   .network__cards {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 52px; }
+    gap: 52px;  */
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 52px;
+    /* width: 50em; */
+  }
   .network__card {
     padding: 56px 48px;
     padding-top: 36px;
     background: linear-gradient(123.3deg, #a96bf7 2.02%, #3103b5 101.68%);
     box-shadow: 0px 9px 44px rgba(90, 38, 204, 0.19);
-    border-radius: 16px; }
-  .network__card2 {
-    background: linear-gradient(180deg, #be5780 0%, #da621d 100%);
-    box-shadow: 0px 9px 44px rgba(255, 107, 0, 0.19);
     border-radius: 16px; }
   .network__card-text {
     margin-bottom: 32px; }
@@ -1066,6 +1043,7 @@
     z-index: 5;
     background: var(--black);
     color: var(--white); }
+
     .network__title {
       position: relative;
       font-weight: bold;
@@ -1100,35 +1078,6 @@
       font-size: 32px;
       line-height: 48px;
       margin-bottom: 24px; }
-    .network__box-items {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 32px; }
-    .network__box-item {
-      padding: 6px 20px;
-      display: flex;
-      align-items: center;
-      background: #222d37;
-      border-radius: 12px; }
-    .network__box-circle {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: rgba(255, 214, 0, 0.2);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 8px; }
-    .network__box-circle-cirle {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #ffd600; }
-    .network__box-name {
-      font-size: 15px;
-      line-height: 32px;
-      color: #ffffff; }
     .network__cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1139,10 +1088,6 @@
       padding-top: 24px;
       background: linear-gradient(123.3deg, #a96bf7 2.02%, #3103b5 101.68%);
       box-shadow: 0px 9px 44px rgba(90, 38, 204, 0.19);
-      border-radius: 16px; }
-    .network__card2 {
-      background: linear-gradient(180deg, #be5780 0%, #da621d 100%);
-      box-shadow: 0px 9px 44px rgba(255, 107, 0, 0.19);
       border-radius: 16px; }
     .network__card-text {
       margin-bottom: 16px; }
@@ -1301,10 +1246,6 @@
       padding-top: 16px;
       background: linear-gradient(123.3deg, #a96bf7 2.02%, #3103b5 101.68%);
       box-shadow: 0px 9px 44px rgba(90, 38, 204, 0.19);
-      border-radius: 12px; }
-    .network__card2 {
-      background: linear-gradient(180deg, #be5780 0%, #da621d 100%);
-      box-shadow: 0px 9px 44px rgba(255, 107, 0, 0.19);
       border-radius: 12px; }
     .network__card-text {
       margin-bottom: 12px; }

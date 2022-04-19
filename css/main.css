@@ -908,7 +908,8 @@
   }
   .network__title {
     position: relative;
-    margin-bottom: 60px; }
+    /* margin-bottom: 60px;  */
+  }
     .network__title::before {
       content: url(../image/paints4.png);
       width: 100%;
@@ -921,6 +922,9 @@
     display: none; }
   .network__title-every {
     display: none; }
+  .flipdown{
+    margin: 30px auto;
+  }
   .network__box {
     padding: 86px;
     padding-top: 52px;

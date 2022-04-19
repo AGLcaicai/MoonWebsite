@@ -1849,7 +1849,7 @@
   position: relative;
   z-index: 10;
   padding: 42px 0px;
-  background: linear-gradient(180deg, #FFD600 0%, #FFC700 100%); }
+  background: linear-gradient(180deg, #F9B95C 0%, #F9B95C 100%); }
   .footer__inner {
     display: grid;
     grid-template-columns: -webkit-min-content -webkit-min-content -webkit-min-content;
@@ -1920,7 +1920,7 @@
       row-gap: 24px; }
     .footer__logo {
       grid-column: 1/2; }
-    .footer__logo > svg {
+    .footer__logo > img {
       display: none; }
     .footer__logo > div {
       display: block; }

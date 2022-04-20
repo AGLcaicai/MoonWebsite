@@ -2152,3 +2152,9 @@
     margin-top: 50px;
   }
 }
+
+@media (max-width: 550px){
+  #flipdown {
+    margin-left: -15px;
+  }  
+}

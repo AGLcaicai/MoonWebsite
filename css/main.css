@@ -1201,6 +1201,9 @@
         z-index: -1;
         top: 10px;
         left: -12px; }
+    .network_subtitle{
+      display: none;
+    }
     .network__box {
       padding: 0px;
       background: transparent;

@@ -690,8 +690,8 @@
   .get_subtitle{
     font-size: 25px;
     font-weight: bold;
-    /* font-size: 65px; */
     line-height: 60px;
+    margin-top: 2em;
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0px 2px 25px rgb(0 0 0 / 60%);
@@ -1614,7 +1614,7 @@
     line-height: 32px;
     /* identical to box height, or 114% */
     text-align: center;
-    margin-bottom: 21px; }
+    margin-bottom: 70px; }
     .idea__title2::before {
       content: url(../image/paints5_1.png);
       width: 100%;
@@ -1995,3 +1995,160 @@
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
+
+.learn_container{
+  max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    
+}
+.treasury{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  padding: 1.5rem;
+  width: 40em;
+  height: 25em;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: linear-gradient(123.3deg, #0B3B8E 2.02%, #F9B95C 101.68%);
+}
+.treasury_title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.treasury_title a{
+  color: white;
+}
+.treasury_balence{
+  width: 100%;
+  padding: 1em 0.5em;
+  border: 1px solid ;
+  border-radius: 0.5rem;
+}
+.coin_balence{
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid ;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-top: 0.5em;
+}
+.coinbalence_left{
+  width: 100%;
+}
+.main_learn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .treasury{
+    margin-top: 3em;
+  }
+  .learn_container{
+    max-width: 1172px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 16px;
+      flex-flow: row wrap;
+  }
+  .main_learn{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .learn_container{
+    max-width: 1172px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 16px;
+      flex-flow: row wrap;
+  }
+  .main_learn{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
+
+.main_roadmap{
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+
+}
+.roadmap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-flow: row wrap;
+  max-width: 1350px;
+  margin: 10px auto auto 90px;
+}
+.roadmap_left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  /* border: 1px solid; */
+  /* border-image: linear-gradient(252.58deg,#D7594F, rgba(166, 63, 0, 0),#F9B95C) 8 48 90; */
+  /* margin-top: 100px; */
+  width: 45em;
+  height: 25em;
+
+}
+.roadmap_left_title{
+  font-size: 2em;
+  line-height: 1.35em;
+  margin: 15px 0;
+  font-weight: 900;
+}
+.roadmap_left_subtitle{
+  font-size: 1.25em;
+  margin: 10px 0;
+}
+.roadmap_detail{
+  font-size: 1em;
+  margin-top: 0.5em
+}
+.roadmap_right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  padding: 1.5rem;
+  width: 25em;
+  font-size: 1.25em;
+}
+.roadmap_right_detial{
+  font-size: 4.5em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .roadmap{
+    text-align: center;
+    margin: 0px auto auto auto;
+  }
+  .roadmap_right{
+    margin-top: 50px;
+  }
+}

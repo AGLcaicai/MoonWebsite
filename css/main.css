@@ -56,7 +56,7 @@
 .title {
   font-weight: bold;
   font-size: 65px;
-  line-height: 100px;
+  line-height: 90px;
   /* identical to box height, or 192% */
   text-align: center;
   color: #FFFFFF;
@@ -69,7 +69,7 @@
   background: var(--black); }
 
 .top_paddings{
-  padding: 205px 0px !important;
+  padding: 120px 0px !important;
   position: relative;
   z-index: 50;
   background: var(--black);

@@ -1060,10 +1060,20 @@
     padding: 17px;
     background: #0f0f0f;
   }
-  .ticketimg:hover{
-    width: 100%;
-    animation-delay: 1s;
+  .ticketimg:hover {
+    animation: move .3s linear forwards;
   }
+
+  @keyframes move {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+  }
+
   .network__card-text {
     margin-bottom: 32px; 
     text-align: center;}

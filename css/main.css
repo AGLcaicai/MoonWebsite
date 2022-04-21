@@ -618,6 +618,7 @@
     margin-top: 10px;
     width: 35em;
     height: 20em;
+    margin: 0 auto;
   }
 }
 
@@ -801,7 +802,7 @@
 .change {
   position: relative;
   background: var(--black);
-  z-index: 10;
+
   color: var(--white); }
   .change__title {
     font-weight: bold;
@@ -852,11 +853,9 @@
   .change__card-top {
     /* margin-bottom: 8px; */
     /* display: flex; */
+    padding-top: 5px;
     align-items: center;
     text-align: center; }
-  .change__card-top-svg {
-    /* margin-right: 16px; */
-    margin-top: 5px; }
   .change__card-top-title {
     font-weight: bold;
     font-size: 20px;
@@ -894,7 +893,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px; }
   .change__card {
-    padding: 24px 28px;
+    padding: 5px 28px;
     background: #161D24;
     border: 2px solid #2A3744;
     border-radius: 16px; }
@@ -907,8 +906,6 @@
     margin-bottom: 8px;
     display: flex;
     align-items: center; }
-  .change__card-top-svg {
-    margin-right: 16px; }
   .change__card-top-title {
     font-weight: bold;
     font-size: 20px;
@@ -977,13 +974,6 @@
     margin-bottom: 4px;
     display: flex;
     align-items: center; }
-  .change__card-top-svg {
-    margin-right: 8px;
-    width: 24px;
-    height: 24px; }
-  .change__card-top-svg > svg {
-    width: 24px;
-    height: 24px; }
   .change__card-top-title {
     font-size: 18px;
     line-height: 24px;
@@ -1030,10 +1020,10 @@
     margin: 30px auto;
   }
   .network__box {
-    padding: 86px;
+    padding: 0px 20px 0px 20px;
     padding-top: 52px;
-    background: #161d24;
-    border: 2px solid #2a3744;
+    background: #141414;
+    border: 2px solid #141414;
     border-radius: 24px;
     margin-bottom: 100px; }
   .network__box-title {
@@ -1057,13 +1047,22 @@
     /* width: 50em; */
   }
   .network__card {
-    padding: 56px 48px;
+    padding: 56px 0px;
     padding-top: 36px;
-    background: linear-gradient(123.3deg, #0B3B8E 2.02%, #D7594F 101.68%);
+    background: #0a0a0a;
+    border-radius: 1px solid #1f201f;
     box-shadow: 0px 9px 44px rgba(90, 38, 204, 0.19);
     border-radius: 16px; }
   .ticketimg{
-    width: 40%;
+    width: 78%;
+    border: 1px solid #121312;
+    border-radius: 16px;
+    padding: 17px;
+    background: #0f0f0f;
+  }
+  .ticketimg:hover{
+    width: 100%;
+    animation-delay: 1s;
   }
   .network__card-text {
     margin-bottom: 32px; 
@@ -1086,24 +1085,32 @@
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
-    gap: 24px; 
-  text-align: center;}
+    gap: 25px; }
   .network__card-item {
     display: flex;
-    align-items: center; }
-  .network__card-svg {
-    padding: 8px;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    display: flex;
     justify-content: center;
+    position: relative;
     align-items: center;
-    margin-right: 24px; }
+    flex-flow: row wrap;
+    gap: 2em;}
   .network__card-name {
     font-weight: bold;
-    font-size: 15px;
-    line-height: 36px;
+    font-size: 17px;
+    /* line-height: 36px; */
     /* identical to box height, or 164% */ }
+
+  .card_sub{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: auto;
+    text-align: center;
+    height: auto;
+    padding: 0px 5px 0px 5px;
+    line-height: 25px;
+    background-color: rgb(90 38 204 / 19%);
+    color: #b160e9;
+    font-size: 18px;
+  }
   .sub_boxtitle{
     font-size: 20px;
   }
@@ -1157,7 +1164,8 @@
     .network__card {
       padding: 36px 32px;
       padding-top: 24px;
-      background: linear-gradient(123.3deg, #a96bf7 2.02%, #3103b5 101.68%);
+      background: #0a0a0a;
+      border-radius: 1px solid #1f201f;
       box-shadow: 0px 9px 44px rgba(90, 38, 204, 0.19);
       border-radius: 16px; }
     .network__card-text {
@@ -1177,18 +1185,12 @@
       gap: 12px; }
     .network__card-item {
       display: flex;
-      align-items: center; }
-    .network__card-svg {
-      padding: 0px;
-      background: rgba(0, 0, 0, 0);
-      border-radius: 0px;
-      display: flex;
-      justify-content: center;
       align-items: center;
-      margin-right: 12px; }
+      gap: 0.5em;  }
     .network__card-name {
       font-size: 17px;
       line-height: 28px; }
+    
   }
 
 @media only screen and (max-width: 768px) {
@@ -1279,7 +1281,8 @@
     .network__card {
       padding: 28px 24px;
       padding-top: 16px;
-      background: linear-gradient(123.3deg, #a96bf7 2.02%, #3103b5 101.68%);
+      background: #0a0a0a;
+      border-radius: 1px solid #1f201f;
       box-shadow: 0px 9px 44px rgba(90, 38, 204, 0.19);
       border-radius: 12px; }
     .network__card-text {
@@ -1299,20 +1302,7 @@
       gap: 12px; }
     .network__card-item {
       display: flex;
-      align-items: center; }
-    .network__card-svg {
-      padding: 0px;
-      background: rgba(0, 0, 0, 0);
-      border-radius: 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 12px;
-      width: 20px;
-      height: 20px; }
-    .network__card-svg > svg {
-      width: 20px;
-      height: 20px; }
+      align-items: center;}
     .network__card-name {
       font-size: 13px;
       line-height: 20px;
@@ -2057,7 +2047,9 @@
 }
 @media only screen and (max-width: 1200px) {
   .treasury{
-    margin-top: 3em;
+    /* margin-top: 3em; */
+    height: auto;
+    margin: 3em auto auto auto;
   }
   .learn_container{
     max-width: 1172px;
@@ -2085,6 +2077,7 @@
     margin: 0 auto;
     padding: 0 16px;
   }
+
 }
 
 .main_roadmap{
@@ -2102,7 +2095,7 @@
   align-items: center;
   flex-flow: row wrap;
   max-width: 1350px;
-  margin: 10px auto auto 90px;
+  margin: 10px auto 20px 60px;
 }
 .roadmap_left{
   display: flex;
@@ -2149,7 +2142,7 @@
 @media only screen and (max-width: 768px) {
   .roadmap{
     text-align: center;
-    margin: 0px auto auto auto;
+    margin: 0px auto 20px auto;
   }
   .roadmap_right{
     margin-top: 50px;

@@ -2161,6 +2161,7 @@
 
 @media (max-width: 550px){
   #flipdown {
-    margin-left: -15px;
+    margin: 15px auto;
   }  
 }
+
